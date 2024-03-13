@@ -1,8 +1,13 @@
-<script setup>
-const { data } = await useFetch("/api/disney");
-</script>
+<script setup></script>
 <template>
-  <div>
-    <h1>{{ data[1].name }}</h1>
-  </div>
+  <nav>
+    <div>Logo</div>
+    <ul>
+      <li><NuxtLink to="/">Home</NuxtLink></li>
+      <li><NuxtLink to="/about">About</NuxtLink></li>
+      <li><NuxtLink to="/users">Users</NuxtLink></li>
+    </ul>
+  </nav>
+  <NuxtPage />
+  <footer>&copy; 2024 Ashlyn</footer>
 </template>
